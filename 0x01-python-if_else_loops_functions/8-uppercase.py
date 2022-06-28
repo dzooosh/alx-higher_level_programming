@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-# isupper: A function that checks for upper character
-# c: parameter to check
-# Returns: True or False on confirmation
+# isupper: A function that prints strings in upper character
+# str: string to change
+# Returns: capitalized string
 
-def isupper(c):
-    if ord(c) in range(65, 91):
-        return True
-    else:
-        return False
+def uppercase(str):
+    upcase = ""
+    for i in str:
+        if (ord(i) >= 97 and ord(i) <= 123):
+           letter = chr(ord(i) - 32)
+        upcase += letter
+    return upcase
