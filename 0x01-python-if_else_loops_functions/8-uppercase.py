@@ -3,9 +3,10 @@
 # str: string to change
 # Returns: capitalized string
 
+
 def uppercase(str):
-    for i in str:
-        if ord(i) >= 97 and ord(i) <= 122:
-            leta = chr(ord(i) - 32)
-        print("{}".format(leta), end="")
+    for c in str:
+        if ord(c) >= 97 and ord(c) <= 122:
+            c = chr(ord(c) - 32)
+        print("{}".format(c), end="")
     print("")
