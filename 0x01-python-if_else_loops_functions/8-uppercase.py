@@ -5,7 +5,7 @@
 
 def uppercase(str):
     for i in str:
-        if (ord(i) >= 97 and ord(i) <= 122):
-           letter = chr(ord(i) - 32)
-        print("{}".format(letter), end="")
+        if ord(i) >= 97 and ord(i) <= 122:
+            leta = chr(ord(i) - 32)
+        print("{}".format(leta), end="")
     print("")
