@@ -4,9 +4,8 @@
 # Returns: capitalized string
 
 def uppercase(str):
-    upcase = ""
     for i in str:
-        if (ord(i) >= 97 and ord(i) <= 123):
+        if (ord(i) >= 97 and ord(i) <= 122):
            letter = chr(ord(i) - 32)
-        upcase += letter
-    return upcase
+        print("{}".format(letter), end="")
+    print("")
