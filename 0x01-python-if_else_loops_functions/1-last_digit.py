@@ -15,4 +15,4 @@ def lastnum(num):
         return "and is 0"
 
 
-print("Last digit of {} is {} {}".format(number, lstDigit, lastnum(Digit)))
+print("Last digit of {} is {} {}".format(number, Digit, lastnum(Digit)))
