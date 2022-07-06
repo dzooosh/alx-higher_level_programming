@@ -3,5 +3,8 @@
 # function that returns a new dict with all values multiplied by 2
 def multiply_by_2(a_dictionary):
     a_dict = a_dictionary.copy()
-    new_dict = dict(map(lambda x: x[1] * 2), a_dict.items())
-    return new_dict
+
+    for i in a_dict.keys():
+        a_dict[i] *= 2
+
+    return (a_dict)
