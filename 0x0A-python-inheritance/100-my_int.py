@@ -5,12 +5,18 @@
 
 class MyInt(int):
     """ subclass myInt from int class """
-    def __eq__(self):
-        """ return the not equal method instead"""
-        s = super.__ne__()
-        return s
+    
+    def __init__(self, value):
+        """ initialization of class
+        Args:
+            value: the input number"""
+        super().__init__(value)
+        self.value = value
 
-    def __ne__(self):
+    def __eq__(self, other):
+        """ return the not equal method instead"""
+        return self.value != other.value
+
+    def __ne__(self, other):
         """ return True if equal values"""
-        s = super().__eq__()
-        return s
+        return self.value == other.value
