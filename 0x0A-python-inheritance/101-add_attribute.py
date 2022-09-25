@@ -9,5 +9,6 @@ def add_attribute(clas, atr_name, inpt):
         inpt: the inputed data for the attribute
     """
     if !(inspect.isclass(clas)):
-        raise Exception("can't add new attribute")
-    clas.atr_name = inpt
+        raise TypeError("can't add new attribute")
+    else:
+        setattr(clas, atr_name, inpt)
