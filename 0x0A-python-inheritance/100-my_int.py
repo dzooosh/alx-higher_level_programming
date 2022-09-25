@@ -15,8 +15,8 @@ class MyInt(int):
 
     def __eq__(self, other):
         """ return the not equal method instead"""
-        return self.value != other.value
+        return self.value != other
 
     def __ne__(self, other):
         """ return True if equal values"""
-        return self.value == other.value
+        return self.value == other
