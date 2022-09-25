@@ -5,12 +5,12 @@
 
 class MyInt(int):
     """ subclass myInt from int class """
-    
+
     def __init__(self, value):
         """ initialization of class
         Args:
             value: the input number"""
-        super().__init__(value)
+#        super().__init__(value)
         self.value = value
 
     def __eq__(self, other):
