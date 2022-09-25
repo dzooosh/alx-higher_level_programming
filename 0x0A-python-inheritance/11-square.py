@@ -15,10 +15,6 @@ class Square(Rectangle):
         super().__init__(size, size)
         self.__size = size
 
-    def area(self):
-        """ area of the square """
-        return self.area()
-
     def __str__(self):
         """ string representation of the class Square"""
         string = "[" + str(self.__class__.__name__) + "] "
