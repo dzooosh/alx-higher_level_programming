@@ -7,8 +7,10 @@ class MyInt(int):
     """ subclass myInt from int class """
     def __eq__(self):
         """ return the not equal method instead"""
-        return self.__ne__()
+        s = super.__ne__()
+        return s
 
     def __ne__(self):
         """ return True if equal values"""
-        return self.__eq__()
+        s = super().__eq__()
+        return s
