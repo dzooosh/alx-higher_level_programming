@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """Square class that inherit from rectangle base class"""
-Rectangle = __import__('9-rectangle').Square
+Rectangle = __import__('9-rectangle').Rectangle
 
 class Square(Rectangle):
     """ subclass square """
