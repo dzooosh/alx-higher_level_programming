@@ -6,6 +6,7 @@ from sqlalchemy import Column, Integer, String, MetaData
 mymetadata = MetaData()
 Base = declarative_base(metadata=mymetadata)
 
+
 class State(Base):
     """ defines the class state and inherits Base"""
     __tablename__ = 'states'
