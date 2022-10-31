@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-import urllib.request
+""" fetches alx-intranet.hbtn.io/status site using
+urllib request
+"""
 
 if __name__ == "__main__":
+    import urllib.request
+
     url = 'https://alx-intranet.hbtn.io/status'
     with urllib.request.urlopen(url) as response:
         data = response.read()
