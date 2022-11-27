@@ -5,13 +5,13 @@
 const process = require('process');
 const request = require('request');
 const url = process.argv[2];
-const person_id = 'https://swapi-api.hbtn.io/api/people/18/';
+const personId = 'https://swapi-api.hbtn.io/api/people/18/';
 let count = 0;
 request(url, (error, response, body) => {
   if (error) console.log(error);
   const obj = JSON.parse(body);
   for (const result of obj.results) {
-    if (result.characters.includes(person_id)) {
+    if (result.characters.includes(personId)) {
       count += 1;
     }
   }
